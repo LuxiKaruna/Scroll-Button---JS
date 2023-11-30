@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Top Button</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <i><img src="arrow-up-solid.svg" alt=""></i>
+    <div class="sec1"></div>
+    <h1>Scroll Top Button</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Voluptatem, aperiam. Voluptates quae consectetur doloremque explicabo, 
+        sapiente reprehenderit praesentium omnis quaerat reiciendis! Quibusdam 
+        ducimus officiis et tenetur rerum? Suscipit, illum fugit?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Quidem exercitationem nisi animi, alias ab neque assumenda inventore, 
+        aspernatur dignissimos totam molestiae eligendi dolor nihil. Fugit, necessitatibus. 
+        Iusto quasi ratione architecto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Ea saepe ipsa ipsam, voluptatum mollitia laudantium dolorem. 
+        Est, cupiditate? Similique, nihil corrupti. Rem aliquid dicta sunt sapiente aliquam ut porro neque.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non autem vitae quam sed, odit tenetur fugit voluptate officiis assumenda.
+         Fugit reiciendis illum aperiam. Odit earum reiciendis adipisci quasi,
+          et ipsa accusantium eius totam saepe est veritatis fugit alias tempore repudiandae?
+    </p>
+
+
+    <div class="sec2"></div>
+    <h1>Scroll Top Button</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Voluptatem, aperiam. Voluptates quae consectetur doloremque explicabo, 
+        sapiente reprehenderit praesentium omnis quaerat reiciendis! Quibusdam 
+        ducimus officiis et tenetur rerum? Suscipit, illum fugit?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Quidem exercitationem nisi animi, alias ab neque assumenda inventore, 
+        aspernatur dignissimos totam molestiae eligendi dolor nihil. Fugit, necessitatibus. 
+        Iusto quasi ratione architecto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Ea saepe ipsa ipsam, voluptatum mollitia laudantium dolorem. 
+        Est, cupiditate? Similique, nihil corrupti. Rem aliquid dicta sunt sapiente aliquam ut porro neque.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non autem vitae quam sed, odit tenetur fugit voluptate officiis assumenda.
+         Fugit reiciendis illum aperiam. Odit earum reiciendis adipisci quasi,
+          et ipsa accusantium eius totam saepe est veritatis fugit alias tempore repudiandae?
+    </p>
+
+
+
+<script>
+
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(window).scrollTop()>300){
+                $('i').css({
+                    "opacity":"1","pointer-events":"auto"
+                });
+            }else{
+                 $('i').css({
+                    "opacity":"0","pointer-events":"none"
+                });
+            }
+        });
+        $('i').click(function(){
+            $('html').animate({scrollTop:0},500);
+        });
+    });
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

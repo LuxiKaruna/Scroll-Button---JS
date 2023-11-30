@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sec1,.sec2{
+    background: url(computer.avif) no-repeat;
+    background-size: cover;
+    height: 100vh;   
+}
+
+.sec2{
+    background: url(man.jpg) no-repeat;
+}
+
+h1{
+    font-size: 40px;
+    padding: 10px 30px;
+}
+
+p{
+    text-align: justify;
+    padding: 0px 30px 15px;
+}
+
+i,img{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 60px;
+    background: #00050f;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease-in-out;
+}
+
+i:hover{
+    background: #0d4aa5;
+    transition: .5s;
+}
